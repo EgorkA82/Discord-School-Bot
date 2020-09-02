@@ -28,5 +28,5 @@ urllib3==1.25.8
 vk==2.0.2
 vk-api==11.8.0
 wrapt==1.11.2
-yar==l1.5.1
+yarl==1.5.1
 zope.interface==4.7.2
