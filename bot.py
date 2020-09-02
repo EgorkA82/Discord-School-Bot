@@ -1,18 +1,10 @@
-import discord
-from discord.ext import commands
-import datetime
-import re
+from discord import *
+from discord.ext import *, commands
+from datetime import *
+from re import *
+from settings import *
 
-############################### VARIABLES ################################
 
-current_version = 0.1
-prefix = "/"
-activity_type = discord.ActivityType.playing
-activity_name = f"{prefix}help".format(prefix=prefix)
-activity_emoji = None
-TOKEN = 'NzUwMjkyODU3MzM1NTc4NjI0.X04arA.y1_MTosO6vHvH5E7zgoGgs6JYkM'
-
-############################### VARIABLES ################################
 
 client = commands.Bot(command_prefix=prefix,
                    description='Unique BOT for School\nDeveloped by: Egor Blyablin\nCurrent version: "{current_version}"\nCurrent prefix: "{prefix}"'.format(current_version=current_version, prefix=prefix))
