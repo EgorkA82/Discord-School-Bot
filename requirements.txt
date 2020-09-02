@@ -17,10 +17,6 @@ mccabe==0.6.1
 multidict==4.7.6
 Pillow==7.1.1
 pip==20.2.2
-pylint==2.4.4
-pymorphy==20.8
-pymorphy2-dicts==2.4.393442.3710985
-pymorphy2-dicts-ru==2.4.404381.4453942
 pyperclip==1.7.0
 pyping==0.0.5
 pytz==2019.3
