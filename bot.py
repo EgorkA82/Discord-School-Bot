@@ -11,7 +11,7 @@ client = commands.Bot(command_prefix=prefix,
 async def on_ready():
     print(f'Successful start;\n\
 Bot UserName: "{client.user.name}";')
-    await client.change_presence(status=discord.Status.online, activity=discord.Activity(type=eval(activity_type), name=activity_name))
+    await client.change_presence(status=discord.Status.online, activity=discord.Activity(type=exec(activity_type), name=activity_name))
 
 @client.event
 async def on_message(message):
