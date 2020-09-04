@@ -1,13 +1,7 @@
-from discord import *
-from discord.ext import *
-from datetime import *
-from re import *
-from settings import *
-
-
+exec(libs.py)
 
 client = commands.Bot(command_prefix=prefix,
-                   description='Unique BOT for School\nDeveloped by: Egor Blyablin\nCurrent version: "{current_version}"\nCurrent prefix: "{prefix}"'.format(current_version=current_version, prefix=prefix))
+                   description='Unique BOT for School\nDeveloped by: {developers}\nCurrent version: "{current_version}"\nCurrent prefix: "{prefix}"'.format(developers=", ".join(developers), current_version=current_version, prefix=prefix))
 
 @client.event
 async def on_ready():
