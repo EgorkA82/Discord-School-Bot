@@ -1,4 +1,8 @@
-exec(libs.py)
+from discord import *
+from discord.ext import commands
+from datetime import *
+from re import *
+from settings import *
 
 client = commands.Bot(command_prefix=prefix,
                    description='Unique BOT for School\nDeveloped by: {developers}\nCurrent version: "{current_version}"\nCurrent prefix: "{prefix}"'.format(developers=", ".join(developers), current_version=current_version, prefix=prefix))
@@ -7,7 +11,7 @@ client = commands.Bot(command_prefix=prefix,
 async def on_ready():
     print(f'Successful start;\n\
 Bot UserName: "{client.user.name}";')
-    await client.change_presence(status=discord.Status.online, activity=discord.Activity(type=activity_type, name=activity_name))
+    await client.change_presence(status=discord.Status.online, activity=discord.Activity(type=eval(activity_type), name=activity_name))
 
 @client.event
 async def on_message(message):
