@@ -3,4 +3,3 @@ prefix = "/"
 developers = ["Egor Blyablin"]
 activity_name = f"{prefix}help"
 activity_emoji = None
-TOKEN = ''
