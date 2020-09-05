@@ -1,3 +1,4 @@
+import os
 from os import *
 from discord import *
 from discord.ext import *
