@@ -1,3 +1,4 @@
+from os import *
 from discord import *
 from discord.ext import *
 import discord.ext.commands
@@ -6,6 +7,7 @@ from datetime import *
 from re import *
 from settings import *
 from boto.s3.connection import S3Connection
+
 
 client = discord.ext.commands.Bot(command_prefix=prefix,
                    description='Unique BOT for School\nDeveloped by: {developers}\nCurrent version: "{current_version}"\nCurrent prefix: "{prefix}"'.format(developers=", ".join(developers), current_version=current_version, prefix=prefix))
