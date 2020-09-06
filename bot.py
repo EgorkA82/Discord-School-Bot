@@ -1,5 +1,4 @@
-import os
-from os import *
+import os as os
 from discord import *
 from discord.ext import *
 import discord.ext.commands
