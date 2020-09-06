@@ -41,4 +41,4 @@ async def school_pass(context, till):
 
 ############################### COMMANDS ##################################
 
-client.run(boto.connect_s3.S3Connection(os.environ['TOKEN']))
+client.run(boto.s3.connection.S3Connection(os.environ['TOKEN']))
