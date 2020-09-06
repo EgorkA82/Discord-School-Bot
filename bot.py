@@ -6,7 +6,7 @@ from discord.ext.commands import *
 from datetime import *
 from re import *
 from settings import *
-import boto
+from boto.s3.connection import S3Connection
 
 
 client = discord.ext.commands.Bot(command_prefix=prefix,
@@ -41,4 +41,4 @@ async def school_pass(context, till):
 
 ############################### COMMANDS ##################################
 
-client.run(boto.s3.connection.S3Connection(os.environ['TOKEN']))
+client.run(S3Connection(os.environ['TOKEN']))
