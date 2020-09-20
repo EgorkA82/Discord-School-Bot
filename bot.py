@@ -6,8 +6,6 @@ from discord.ext.commands import *
 from datetime import *
 from re import *
 from settings import *
-from boto.s3.connection import S3Connection
-
 
 client = discord.ext.commands.Bot(command_prefix=prefix,
                    description='Unique BOT for School\nDeveloped by: {developers}\nCurrent version: "{current_version}"\nCurrent prefix: "{prefix}"'.format(developers=", ".join(developers), current_version=current_version, prefix=prefix))
@@ -41,4 +39,4 @@ async def school_pass(context, till):
 
 ############################### COMMANDS ##################################
 
-client.run(S3Connection(os.environ['TOKEN']))
+client.run(os.environ['TOKEN'])
