@@ -39,4 +39,4 @@ async def school_pass(context, till):
 
 ############################### COMMANDS ##################################
 
-client.run(os.environ['TOKEN'])
+client.run(os.environ.get('TOKEN'))
