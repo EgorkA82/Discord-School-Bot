@@ -14,7 +14,7 @@ client = discord.ext.commands.Bot(command_prefix=prefix,
 async def on_ready():
     print(f'Successful start;\n\
 Bot UserName: "{client.user.name}";')
-    await client.change_presence(status=discord.Status.online, activity=discord.Activity(type=discord.ActivityType.playing, name=activity_name))
+    await client.change_presence(status=discord.Status.online, activity=discord.Activity(type=discord.ActivityType.watching, name=activity_name))
 
 ############################### COMMANDS ##################################
 
